@@ -5,7 +5,7 @@ def main():
     start = "Traductor texto a morse\n"
     print("*" * len(start))
     print(start + "*" * len(start) + "\n")
-    morse = input("Ingresa tu texto a morse: ")
+    morse = input("Ingresa tu texto a morse: ").lower()
     for a in morse:
         if a in DiccionarioMorse:
             print(DiccionarioMorse[a], end=" ")
